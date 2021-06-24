@@ -1,0 +1,94 @@
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <title>Student Search Page</title>
+  </head>
+  <body>
+    <div id="overlay">
+      <img src= "https://pbs.twimg.com/profile_images/665225941057036288/xXpVpaZ_.png" alt="North Park Logo" id="logo">
+      <hr>
+
+      <form>
+
+        <div>
+          <!--Grades Selector-->
+          <h1>Students Search Page</h1>
+          <h4>Welcome Students!</h4>
+            
+
+          <h2>Select Your Grade</h2>
+        <label for="htmlSGrade9">Grade 9</label>
+        <input id="htmlSGrade9" type="checkbox">
+
+        <label for="htmlSGrade10">Grade 10</label>
+        <input id="htmlSGrade10" type="checkbox">
+
+        <label for="htmlSGrade11">Grade 11</label>
+        <input id="htmlSGrade11" type="checkbox">
+
+        <label for="htmlSGrade12">Grade 12</label>
+        <input id="htmlSGrade12" type="checkbox">
+
+        <label for="htmlSGradeAll">All</label>
+        <input id="htmlSGradeAll" type="checkbox">
+        <hr>
+      </div>
+
+      <div>
+        <!--Gender Selector-->
+        <h2>Select Gender(s)</h2>
+        <select id="htmlSGender" required>
+          <option value=""></option>
+          <option value="Male">Male</option>
+          <option value="Female">Female</option>
+          <option value="Other">Other</option>
+          <option value="All">All</option>
+        </select>
+        <hr>
+      </div>
+
+      <div>
+        <!--Club Selector-->
+        <h2>Select Club</h2>
+        <select id ="htmlSClub" required>
+          <option value=""></option>
+          <option value="DECA">DECA</option>
+          <option value="HOSA">HOSA</option>
+          <option value="MIST">MIST</option>
+          <option value="Film Club">Film Club</option>
+          <option value="Basketball Team">Basketball Team</option>
+          <option value="All">All</option>
+        </select>
+        <hr>
+      </div>
+        
+        <hr>
+      <!--Radio Buttons-->
+        <button class="btn" onclick="getStudentInput()">Submit</button>
+        <button class="btn">Start Over</button>
+        <br>
+        <br>
+
+      
+        <!--Adding Links To Other Pages-->
+
+        <!--Twitter-->
+        <a href="https://twitter.com/northparksac?lang=en">
+            <img id="twitterLogo" border="0" alt="W3Schools" src="http://assets.stickpng.com/images/580b57fcd9996e24bc43c53e.png">
+        <!--Instagram-->
+            <a href="https://www.instagram.com/northparksac/?hl=en">
+            <img id="instagramLogo" border="0" alt="W3Schools" src="https://assets.stickpng.com/images/580b57fcd9996e24bc43c521.png">
+         <!--School Website-->
+            <a href="https://www.peelschools.org/schools/northpark/Pages/default.aspx">
+            <img id="schoolLogo" border="0" alt="W3Schools" src="https://pbs.twimg.com/profile_images/665225941057036288/xXpVpaZ_.png">
+      </form>
+    </section>
+    <script src='StudentSearch.js'></script>
+  </body>
+</html>
+
+
+

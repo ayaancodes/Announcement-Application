@@ -1,0 +1,93 @@
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <title>Announcement Creation</title>
+  </head>
+
+  <body onload="getExistingAnnouncement()">
+    
+    <!--Created This Div For Styling-->
+    <div id="overlay">
+
+      <!--North Park Symbol-->
+      <img src= "https://pbs.twimg.com/profile_images/665225941057036288/xXpVpaZ_.png" alt="North Park Logo" id="logo">
+      <hr>
+
+      <form>
+
+      <div>
+        <!--Grades Selector-->
+        <h1>Announcement Creation</h1>
+					
+        <h2>What grade is this for?</h2>
+        <label for="htmlTGrade9">Grade 9</label>
+        <input id="htmlTGrade9" class = "checkboxes" type="checkbox">
+
+        <label for="htmlTGrade10">Grade 10</label>
+        <input id="htmlTGrade10" class = "checkboxes" type="checkbox">
+
+        <label for="htmlTGrade11">Grade 11</label>
+        <input id="htmlTGrade11" class = "checkboxes" type="checkbox">
+
+        <label for="htmlTGrade12">Grade 12</label>
+        <input id="htmlTGrade12" class = "checkboxes" type="checkbox">
+
+        <label for="htmlTgradeAll">All</label>
+        <input id="htmlTGradeAll" class = "checkboxes" type="checkbox">
+        <hr>
+      </div>
+
+      <div>
+        <!--Gender Selector-->
+        <h2>Select Gender(s)</h2>
+        <select id="htmlTGender">
+          <option value=""></option>
+          <option value="Male">Male</option>
+          <option value="Female">Female</option>
+          <option value="Other">Other</option>
+          <option value="All">All</option>
+        </select>
+        <hr>
+      </div>
+
+      <div>
+        <!--Club Selector-->
+        <h2>Select Club</h2>
+        <select id ="htmlTClub">
+          <option value=""></option>
+          <option value="DECA">DECA</option>
+          <option value="HOSA">HOSA</option>
+          <option value="MIST">MIST</option>
+          <option value="Film Club">Film Club</option>
+          <option value="Basketball Team">Basketball Team</option>
+          <option value="All">All</option>
+        </select>
+        <hr>
+      </div>
+
+      <div>
+        <!--Announcement Details-->
+        <label for="details">Announcement Details</label>
+        <br>
+        <textarea id="htmlTDetails" name="details" rows="5" cols="40"></textarea>
+        <br>
+        <hr>
+
+      </div>
+
+      
+        <!--Buttons-->  
+        <button  class="btn" type="button" onclick="getTeacherInput()">Submit</button>
+        <button class="btn" onclick ="restartPage()">Start Over</button>
+          
+
+
+      </form>
+    </div>
+    <!--Links HTML to JavaScript-->
+    <script src='teacher.js'></script>
+  </body>
+</html>
